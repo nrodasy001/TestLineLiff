@@ -69,7 +69,7 @@
     }
 
     async function sendMsg() {
-      if(liff.getContext().type !=="none"){
+     /* if(liff.getContext().type !=="none"){
         await liff.sendMessages([
           {
             "type":"sticker",
@@ -78,14 +78,23 @@
           }
         ])
         alert("Message sent")
-      }
-     /* liff
+      }*/
+    /* liff
         .sendMessages([
         {
             type: "text",
             text: "Hello, World!",
         },
         ])*/
+
+        liff
+        .sendMessages([
+        {
+          "type": "sticker",
+          "packageId": "446",
+          "stickerId": "1988"
+        } ])
+
 
 
 
